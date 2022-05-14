@@ -21,6 +21,16 @@ Changing the path depending on your env.
 
 Open `configs/parent.conf` and `configs/child.conf` and update the path to match your env.
 
+Note: if you are using Visual Studio Code you can automate the startup process.
+
+```bash
+# cd http-security-playground
+mkdir .vscode
+copy docs/vscode/tasks.json .vscode/tasks.json
+
+# restart VSC, see https://sdivakarrajesh.medium.com/automating-task-to-run-on-startup-in-vscode-fe30d7f99454 for details
+```
+
 ## Run
 
 ### Nginx
