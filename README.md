@@ -2,7 +2,7 @@
 
 Simple utility to setup a simulated environment with multiple nested websites
 
-## Start the container
+## Init
 
 ```bash
 7z x nginx-1.21.6.zip
@@ -20,6 +20,30 @@ http {
 Changing the path depending on your env.
 
 Open `configs/parent.conf` and `configs/child.conf` and update the path to match your env.
+
+## Run
+
+### Nginx
+
+```bash
+# start the webserver
+./nginx-start.ps1
+
+# stop the webserver
+./nginx-stop.ps1
+
+# restart the webserver
+./nginx-restart.ps1
+```
+
+### Backend
+
+In a separate terminal where you have both `maven` and `jdk>=8`.
+
+```bash
+cd backend
+./backend-start.ps1
+```
 
 ## Ref
 
